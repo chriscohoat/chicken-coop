@@ -31,6 +31,10 @@ def main():
             door_motor.setSpeed(i)
             time.sleep(0.01)
 
+        time.sleep(10)
+
+        '''
+
         print "\tSlow down..."
         for i in reversed(range(255)):
             door_motor.setSpeed(i)
@@ -52,6 +56,9 @@ def main():
         print "Release"
         door_motor.run(Adafruit_MotorHAT.RELEASE)
         time.sleep(1.0)
+        '''
+
+        return
 
 
 if __name__ == '__main__':
