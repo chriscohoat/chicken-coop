@@ -1,9 +1,10 @@
-from Adafruit_MotorHAT import Adafruit_MotorHAT, Adafruit_DCMotor
+from Adafruit_MotorHAT import Adafruit_MotorHAT
 
 import time
 import atexit
 
 # create a default object, no changes to I2C address or frequency
+# 0x60 is the default address for the first hat. 0x70 is to address all hats
 motor_hat = Adafruit_MotorHAT(addr=0x60)
 
 
