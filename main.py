@@ -33,6 +33,10 @@ def main():
 
         time.sleep(5)
 
+        door_motor.run(Adafruit_MotorHAT.RELEASE)
+
+        time.sleep(5)
+
         print "\tSlow down..."
         for i in reversed(range(255)):
             door_motor.setSpeed(i)
